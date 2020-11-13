@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.userInput {
+	margin: 10px;
+}
+
+.userInput p {
+	margin-top: 5px;
+}
+
+h1 {
+	padding-bottom: 20px;
+}
+
+li {
+	display: inline-block;
+	background-color: grey;
+	color: white;
+	padding: 20px;
+	margin: 10px;
+	cursor: pointer;
+}
