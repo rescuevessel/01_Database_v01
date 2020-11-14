@@ -14,11 +14,20 @@ let listed = things
 	})
 	.join('');
 
+function numbersOnly(value) {
+	if (typeof value === 'number') {
+		return value;
+	}
+}
+
 message.addEventListener('change', updateValue);
 shit.innerHTML = listed;
 
 function updateValue(e) {
-	things.push(e.target.value);
+	let newValue = e.target.value;
+	newnewValue = newValue.replace(/\D/g, '');
+
+	things.push(newnewValue);
 	listed = things
 		.map(things => {
 			return `<li><iframe
@@ -30,7 +39,7 @@ function updateValue(e) {
 	  ></iframe></li>`;
 		})
 		.join('');
-	console.log('listed = ' + listed);
+	console.log(things);
 	shit.innerHTML = listed.toString();
 	message.value = null;
 	//log.textContent = e.target.value;
